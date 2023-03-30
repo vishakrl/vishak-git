@@ -1,11 +1,16 @@
-def small(a,b,c):
-    if a<b and a<c:
-        print(a)
-    elif b<c and b<a:
-        print(b)
+
+
+n=int(input("enter a prime number"))
+
+for i in range(2,n):
+    if n%i==0:
+        print("not a prime number")
+        chk=False
+        break
     else:
-        print(c)
+        chk=True
+
+if chk:
+    print("prime number")
 
 
-
-small(300,50,100)
